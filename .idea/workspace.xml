@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6cf12b38-89d5-40b5-8d80-a904d9c3b98f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/controller/DataSource.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WyfW940shTymfQQbP1DYigQNCb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michal\IdeaProjects\budgetAppVer2\src\main\resources\" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="spring.hibernate" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="spring.Type" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michal\IdeaProjects\budgetAppVer2\src\main\resources\templates" />
+      <recent name="C:\Users\Michal\IdeaProjects\budgetAppVer2" />
+      <recent name="C:\Users\Michal\IdeaProjects\budgetAppVer2\src\main\java\spring" />
+      <recent name="C:\Users\Michal\IdeaProjects\budgetAppVer2\src\main\java\spring\controller" />
+      <recent name="C:\Users\Michal\IdeaProjects\budgetAppVer2\src\main\java\spring\hibernate" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringApp">
+    <configuration name="MainHibernate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring.hibernate.MainHibernate" />
+      <module name="budgetAppVer2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainHibernateDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring.hibernate.MainHibernateDao" />
+      <module name="budgetAppVer2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="budgetAppVer2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="spring.SpringApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainHibernateDao" />
+        <item itemvalue="Application.MainHibernate" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cf12b38-89d5-40b5-8d80-a904d9c3b98f" name="Default Changelist" comment="" />
+      <created>1580126784124</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580126784124</updated>
+      <workItem from="1580126787271" duration="1580000" />
+      <workItem from="1580130086092" duration="5261000" />
+      <workItem from="1580198622601" duration="4379000" />
+      <workItem from="1580203514002" duration="5712000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="87" key="#Assign_Data_Sources" timestamp="1580134787129">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="87" key="#Assign_Data_Sources/0.0.1600.860@0.0.1600.860" timestamp="1580134787129" />
+    <state x="392" y="87" key="#Inspections" timestamp="1580133673857">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="87" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1580133673857" />
+    <state x="392" y="87" key="#Project_Structure" timestamp="1580127995832">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="87" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1580127995832" />
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1580201992456">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1580201992456" />
+    <state x="430" y="118" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1580213446857">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="430" y="118" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1600.860@0.0.1600.860" timestamp="1580213446857" />
+    <state x="622" y="354" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580127858680">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="622" y="354" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1580127858680" />
+    <state x="422" y="23" key="CommitChangelistDialog2" timestamp="1580213335532">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="422" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1580213335532" />
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1580213217942">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1580213217942" />
+    <state width="1556" height="183" key="GridCell.Tab.0.bottom" timestamp="1580213350062">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="183" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580213350062" />
+    <state width="1556" height="183" key="GridCell.Tab.0.center" timestamp="1580213350062">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="183" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1580213350062" />
+    <state width="1556" height="183" key="GridCell.Tab.0.left" timestamp="1580213350062">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="183" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1580213350061" />
+    <state width="1556" height="183" key="GridCell.Tab.0.right" timestamp="1580213350062">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="183" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1580213350062" />
+    <state width="1556" height="183" key="GridCell.Tab.1.bottom" timestamp="1580213350063">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="183" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580213350063" />
+    <state width="1556" height="183" key="GridCell.Tab.1.center" timestamp="1580213350063">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="183" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1580213350063" />
+    <state width="1556" height="183" key="GridCell.Tab.1.left" timestamp="1580213350063">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="183" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1580213350063" />
+    <state width="1556" height="183" key="GridCell.Tab.1.right" timestamp="1580213350063">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="183" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1580213350063" />
+    <state width="1556" height="270" key="GridCell.Tab.2.bottom" timestamp="1580203589798">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="270" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580203589798" />
+    <state width="1556" height="270" key="GridCell.Tab.2.center" timestamp="1580203589797">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="270" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1580203589797" />
+    <state width="1556" height="270" key="GridCell.Tab.2.left" timestamp="1580203589797">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="270" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1580203589797" />
+    <state width="1556" height="270" key="GridCell.Tab.2.right" timestamp="1580203589798">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="270" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1580203589798" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1580213369107">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1580213369107" />
+    <state x="495" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1580203563775">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="495" y="252" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1580203563775" />
+  </component>
+</project>

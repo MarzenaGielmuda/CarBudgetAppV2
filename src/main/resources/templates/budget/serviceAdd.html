@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD EXPENSES</title>
+</head>
+<style>
+    .button1 {
+        background-color: yellow;
+        color: black;
+    }
+</style>
+<body bgcolor=#add8e6>
+<hr>
+<div class="container">
+    <div style="text-align: center;"/>
+    <h2>ADD CAR EXPLOITATION EXPENSES</h2>
+    <div>
+
+        <form action="#" th:action="@{/add_service}" th:object="${service}" method="post">
+
+            <input type="hidden" th:field="*{id}" placeholder="id"><br>
+            <input type="text" th:field="*{value}" placeholder="value"><br>
+            <input type="text" th:field="*{description}" placeholder="description"><br>
+            <!--            <input type="hidden" th:field="*{email}" placeholder="email"><br>-->
+            <input type="submit" th:value="Save">
+            <br/>
+            <br/>
+            <button><a class="button1" href="/serviceIndex" >RETURN</a></button>
+
+        </form>
+        <hr>
+    </div>
+</div>
+
+</body>
+</html>

@@ -17,6 +17,8 @@ import spring.hibernate.HibernateDao;
 import java.util.Date;
 import java.util.List;
 
+import static java.lang.Long.parseLong;
+
 
 @Controller
 public class AppController {
@@ -50,13 +52,6 @@ public class AppController {
     public String indexGet() {
         return "budget/MainIndex";
     }
-//    @RequestMapping(value = "/employees_form", method = RequestMethod.GET)
-//    public String showForm(Model model) {
-//        Employees employees = new Employees();
-//        employees.setStartJobDate(new Date());
-//        model.addAttribute("emp", employees);
-//        return "employees/employees_form";
-//    }
 
     @RequestMapping("/otherIndex")
     public ModelAndView otherIndex(Model model) {
@@ -100,6 +95,123 @@ public class AppController {
 
         return  modelAndView;
     }
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@        Other   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+    //    @RequestMapping(value = "/employees_form", method = RequestMethod.GET)
+//    public String showForm(Model model) {
+//        Employees employees = new Employees();
+//        employees.setStartJobDate(new Date());
+//        model.addAttribute("emp", employees);
+//        return "employees/employees_form";
+//    }
+
+
+    @RequestMapping("/otherGetAll")
+    public ModelAndView otherGetAll(Model model) {
+
+        double sum =0;
+        for ( Other other:listOther
+        ) {
+            sum = sum + other.getValue();
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("list", listOther);
+        modelAndView.addObject("sum", sum);
+        modelAndView.setViewName("budget/otherGetAll");
+        return modelAndView;
+    }
+
+
+
+
+//    @RequestMapping(value = "/save")
+//    public ModelAndView save(@ModelAttribute(value = "emp") Employees employees) {
+//        if (employees.getId() == 0) {
+//            System.out.println("Adding a new emp");
+//            employees.setId(list.size() + 1);
+//            list.add(employees);
+//            addEmployeeInDB(employees);
+//        } else {
+//            updateEmployeeInList(employees);
+//            updateEmployeeInDB(employees);
+//        }
+//
+//        return new ModelAndView("redirect:/employees_list");
+//    }
+
+    @RequestMapping(value = "/add_other")
+
+    public ModelAndView saveOther(@ModelAttribute(value = "other") Other other) {
+
+        if (other.getId() == 0) {
+            System.out.println("is add");
+
+            other.setId(listOther.size() + 1);
+            listOther.add(other);
+            hibernateDao.save(other);
+        } else {
+            listOther.set(listOther.indexOf(other),other);
+            hibernateDao.update(other);
+        }
+
+        return new ModelAndView("redirect:/otherGetAll");
+
+    }
+//
+
+
+    //    @RequestMapping(value = "/edit", method = RequestMethod.POST)
+//    public ModelAndView edit(@RequestParam(value = "emp_id") String emp_id) {
+//        Employees employeesTemp = getEmployeesById(Integer.parseInt(emp_id));
+//        updateEmployeeInDB(employeesTemp);
+//        return new ModelAndView("employees/employees_form", "emp", employeesTemp);
+//    }
+    //
+    @RequestMapping(value = "/edit_other")
+
+    public ModelAndView editOtherMode(@RequestParam(value = "id") String id){
+
+        Other other = getOtherById(Integer.parseInt(id));
+//        hibernateDao.update(other);
+
+
+
+        return new ModelAndView("budget/otherAdd", "other", other );
+    }
+
+
+
+    @RequestMapping(value = "/otherAdd", method = RequestMethod.GET)
+    public ModelAndView showOtherEdit(Model model) {
+//
+        return new ModelAndView("budget/otherAdd", "other", new Other());
+    }
+
+
+
+    @RequestMapping(value = "/delete_other")
+    public ModelAndView deleteOther(@RequestParam(value = "id") String id ) {
+
+//        long param= parseLong(id);
+        Other other = getOtherById(Integer.parseInt(id));
+        hibernateDao.delete(other);
+        listOther.remove(other);
+
+        return new ModelAndView("redirect:/otherGetAll");
+    }
+
+
+    private Other getIdOther(@RequestParam int id) {
+        listOther.stream().filter(f -> f.getId() == id).forEach(System.out::println);
+        return listOther.stream().filter(f -> f.getId() == id).findFirst().get();
+    }
+
+
+        private Other getOtherById(@RequestParam int id) {
+        System.out.println(id);
+        return listOther.stream().filter(f -> f.getId() == id).findFirst().get();
+    }
 
 //
 //    @RequestMapping(value = "/save")
@@ -137,11 +249,7 @@ public class AppController {
 //        return new ModelAndView("employees/employees_list", "list", list);
 //    }
 //
-//    private Employees getEmployeesById(@RequestParam int id) {
-//        System.out.println(id);
-//        return list.stream().filter(f -> f.getId() == id).findFirst().get();
-//    }
-//
+
 //    private void updateEmployeeInList(Employees employees) {
 //        Employees employeesTemp = getEmployeesById(employees.getId());
 //        employeesTemp.setFirstName(employees.getFirstName());

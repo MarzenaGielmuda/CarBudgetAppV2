@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Budget Car</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" type="text/css">
 </head>
 <style>
         h2.ridge {border-style: ridge;
@@ -18,7 +19,18 @@
         .button2 {
             background-color: yellowgreen;
         }
-
+        .button {
+            background-color: white;
+            color: black;
+            padding: 5px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+        }
+        .button:hover{
+            background-color: gray;
+        }
 </style>
 <body bgcolor=#6b8e23>
 <div>
@@ -27,8 +39,8 @@
 
 
 
-    <button><a href="/petrolGasAdd" >Add petrol/gas expenses</a></button>
-    <button><a href="/petrolGasGetAll">View all petrol/gas expenses list</a></button>
+    <button><a href="/petrolGasAdd" class="button">Add petrol/gas expenses</a></button>
+    <button><a href="/petrolGasGetAll" class="button">View all petrol/gas expenses list</a></button>
     <br/>
     <br/>
     <button><a  class="button2" href="/MainIndex" >RETURN</a></button>

@@ -5,6 +5,7 @@
     <title>All PETROL/GAS LIST</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" type="text/css">
 </head>
 <style>
     table{
@@ -16,6 +17,15 @@
     .button1 {
         background-color: red;
         color: black;
+    }
+    .button {
+        background-color: white;
+        color: black;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
     }
 </style>
 <body bgcolor=#6b8e23>
@@ -48,13 +58,13 @@
                 <td>
                     <form  th:action="@{/delete_petrolGas}">
                         <input type="hidden" th:name="id" th:value="${petrolGas.id}"/>
-                        <input type="submit" th:value="Delete"/>
+                        <input type="submit" class="button" th:value="Delete"/>
                     </form>
                 </td>
                 <td>
                     <form action="#" th:action="@{/edit_petrolGas}">
                         <input type="hidden" th:name="id" th:value="${petrolGas.id}"/>
-                        <input type="submit" th:value="Edit" />
+                        <input type="submit" class="button" th:value="Edit" />
                     </form></td>
             </tr>
             </tbody>

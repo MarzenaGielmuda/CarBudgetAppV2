@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Budget Car</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" type="text/css">
 </head>
 <style>
 
@@ -20,6 +21,18 @@
     .button2 {
         background-color: yellowgreen;
     }
+    .button {
+        background-color: white;
+        color: black;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+    }
+    .button:hover{
+        background-color: gray;
+    }
 </style>
 <body bgcolor=#ffa07a>
 <div>
@@ -28,8 +41,8 @@
 
 
 
-    <button><a href="/partsAdd" >Add parts expenses</a></button>
-    <button><a href="/partsGetAll">View all parts expenses list</a></button>
+    <button><a href="/partsAdd"  class="button">Add parts expenses</a></button>
+    <button><a href="/partsGetAll" class="button">View all parts expenses list</a></button>
     <br/>
     <br/>
     <button><a class="button2" href="/MainIndex" >RETURN</a></button>

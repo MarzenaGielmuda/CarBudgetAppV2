@@ -19,7 +19,7 @@ public class PetrolGas implements HibernateEntity {
     @Setter
     @Getter
     @Column(name = "ID")
-    private long id;
+    private int id;
 
     @NonNull
     @Setter @Getter

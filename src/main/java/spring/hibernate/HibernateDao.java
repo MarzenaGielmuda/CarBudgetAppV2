@@ -54,6 +54,8 @@ public class HibernateDao {
         }
     }
 
+
+
     public <T> List<T> get(Class<T> type) {
         Session session = HibernateConfig.getSessionFactory().getCurrentSession();
         Transaction tx = session.beginTransaction();

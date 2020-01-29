@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class MainHibernate {
     public static void main(String[] args) {HibernateDao hibernateDao = new HibernateDao();
-        Other ot1 =new Other(1,250,"opony",new Date());
+        Other ot1 =new Other(250,"opony",new Date());
 
         hibernateDao.save( ot1);
         List<Other> othersList = hibernateDao.get(Other.class);

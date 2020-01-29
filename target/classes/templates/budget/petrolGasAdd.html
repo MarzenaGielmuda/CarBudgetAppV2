@@ -20,10 +20,13 @@
         <form action="#" th:action="@{/add_petrolGas}" th:object="${petrolGas}" method="post">
 
             <input type="hidden" th:field="*{id}" placeholder="id"><br>
+            <h3>VALUE</h3>
             <input type="text" th:field="*{value}" placeholder="value"><br>
+            <h3>DESCRIPTION</h3>
             <input type="text" th:field="*{description}" placeholder="description"><br>
-            <!--            <input type="hidden" th:field="*{email}" placeholder="email"><br>-->
-            <input type="submit" th:value="Save">
+            <h3>DATE</h3>
+            <input type="text" th:field="*{date}" placeholder="date"><br>
+            <input type="submit" th:value="SAVE">
             <br/>
             <br/>
             <button><a  class="button1" href="/petrolGasIndex" >RETURN</a></button>

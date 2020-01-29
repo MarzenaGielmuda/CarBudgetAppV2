@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:form="http://www.w3.org/1999/html">
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>All OTHER LIST</title>
@@ -35,8 +35,8 @@
             <tr>
                 <th>id</th>
                 <th>value</th>
-                <!--                <th>date</th>-->
                 <th>description</th>
+                <th>date</th>
 <!--                <th>total</th>-->
                 <th>Action</th>
             </tr>
@@ -45,8 +45,8 @@
             <tr data-th-each="other : ${list}">
                 <td th:text="${other.id}"></td>
                 <td th:text="${other.value}"></td>
-                <!--                <td th:text="${service.date}"></td>-->
                 <td th:text="${other.description}"></td>
+                <td th:text="${other.date}" ></td>
 
                 <td>
                     <form  th:action="@{/delete_other}">

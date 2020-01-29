@@ -34,8 +34,8 @@
 
                 <th>id</th>
                 <th>value</th>
-                <!--                <th>date</th>-->
                 <th>description</th>
+                <th>date</th>
                 <th>Action</th>
             </tr>
             </thead>
@@ -43,8 +43,8 @@
             <tr data-th-each="parts : ${list}">
                 <td th:text="${parts.id}"></td>
                 <td th:text="${parts.value}"></td>
-                <!--                <td th:text="${service.date}"></td>-->
                 <td th:text="${parts.description}"></td>
+                <td th:text="${parts.date}"></td>
                 <td>
                     <form  th:action="@{/delete_parts}">
                         <input type="hidden" th:name="id" th:value="${parts.id}"/>

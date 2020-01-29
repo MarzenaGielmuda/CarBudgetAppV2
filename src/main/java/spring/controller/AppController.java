@@ -196,10 +196,10 @@ public class AppController {
     }
 
 
-    private Other getIdOther(@RequestParam int id) {
-        listOther.stream().filter(f -> f.getId() == id).forEach(System.out::println);
-        return listOther.stream().filter(f -> f.getId() == id).findFirst().get();
-    }
+//    private Other getIdOther(@RequestParam int id) {
+//        listOther.stream().filter(f -> f.getId() == id).forEach(System.out::println);
+//        return listOther.stream().filter(f -> f.getId() == id).findFirst().get();
+//    }
 
 
         private Other getOtherById(@RequestParam int id) {
@@ -281,15 +281,166 @@ public class AppController {
     }
 
 
-    private Parts getIdParts(@RequestParam int id) {
-        listParts.stream().filter(f -> f.getId() == id).forEach(System.out::println);
-        return listParts.stream().filter(f -> f.getId() == id).findFirst().get();
-    }
-
-
     private Parts getPartsById(@RequestParam int id) {
         System.out.println(id);
         return listParts.stream().filter(f -> f.getId() == id).findFirst().get();
+    }
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ PetrolGas @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+    @RequestMapping("/petrolGasGetAll")
+    public ModelAndView petrolGasGetAll(Model model) {
+
+        double sum =0;
+        for ( PetrolGas petrolGas:listPetrolGas
+        ) {
+            sum = sum + petrolGas.getValue();
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("list", listPetrolGas);
+        modelAndView.addObject("sum", sum);
+        modelAndView.setViewName("budget/petrolGasGetAll");
+        return modelAndView;
+    }
+
+
+    @RequestMapping(value = "/add_petrolGas")
+
+    public ModelAndView savePetrolGas(@ModelAttribute(value = "petrolGas") PetrolGas petrolGas) {
+
+        if (petrolGas.getId() == 0) {
+            System.out.println("is add");
+            petrolGas.setId(listPetrolGas.size() + 1);
+            listPetrolGas.add(petrolGas);
+            addInDB(petrolGas);
+        } else {
+            updatePetrolGasInList(petrolGas);
+            updateInDB(petrolGas);
+        }
+        return new ModelAndView("redirect:/petrolGasGetAll");
+    }
+
+
+    private void updatePetrolGasInList(PetrolGas petrolGas) {
+        PetrolGas petrolGas1 = getPetrolGasById(petrolGas.getId());
+        petrolGas1.setValue(petrolGas.getValue());
+        petrolGas1.setDescription(petrolGas.getDescription());
+        petrolGas1.setDate(petrolGas.getDate());
+
+    }
+
+
+    @RequestMapping(value = "/edit_petrolGas")
+
+    public ModelAndView editPetrolGasMode(@RequestParam(value = "id") String id){
+
+       PetrolGas petrolGas= getPetrolGasById(Integer.parseInt(id));
+
+        return new ModelAndView("budget/petrolGasAdd", "petrolGas", petrolGas );
+    }
+
+
+
+    @RequestMapping(value = "/petrolGasAdd", method = RequestMethod.GET)
+    public ModelAndView showPetrolGasEdit(Model model) {
+//
+        return new ModelAndView("budget/petrolGasAdd", "petrolGas", new PetrolGas());
+    }
+
+
+
+    @RequestMapping(value = "/delete_petrolGas")
+    public ModelAndView deletePetrolGas(@RequestParam(value = "id") String id ) {
+
+       PetrolGas petrolGas = getPetrolGasById(Integer.parseInt(id));
+        deleteInDB(petrolGas);
+        listPetrolGas.remove(petrolGas);
+
+        return new ModelAndView("redirect:/petrolGasGetAll");
+    }
+
+
+    private PetrolGas getPetrolGasById(@RequestParam int id) {
+        System.out.println(id);
+        return listPetrolGas.stream().filter(f -> f.getId() == id).findFirst().get();
+    }
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Service @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+    @RequestMapping("/serviceGetAll")
+    public ModelAndView serviceGetAll(Model model) {
+
+        double sum =0;
+        for ( Service service:listService
+        ) {
+            sum = sum + service.getValue();
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("list", listService);
+        modelAndView.addObject("sum", sum);
+        modelAndView.setViewName("budget/serviceGetAll");
+        return modelAndView;
+    }
+
+
+    @RequestMapping(value = "/add_service")
+
+    public ModelAndView saveService(@ModelAttribute(value = "service") Service service) {
+
+        if (service.getId() == 0) {
+            System.out.println("is add");
+            service.setId(listService.size() + 1);
+            listService.add(service);
+            addInDB(service);
+        } else {
+            updateServiceInList(service);
+            updateInDB(service);
+        }
+        return new ModelAndView("redirect:/serviceGetAll");
+    }
+
+
+    private void updateServiceInList(Service service) {
+        Service service1 = getServiceById(service.getId());
+        service1.setValue(service.getValue());
+        service1.setDescription(service.getDescription());
+        service1.setDate(service.getDate());
+
+    }
+
+
+    @RequestMapping(value = "/edit_service")
+
+    public ModelAndView editServiceMode(@RequestParam(value = "id") String id){
+
+       Service service= getServiceById(Integer.parseInt(id));
+
+        return new ModelAndView("budget/serviceAdd", "service", service );
+    }
+
+
+
+    @RequestMapping(value = "/serviceAdd", method = RequestMethod.GET)
+    public ModelAndView showServiceEdit(Model model) {
+//
+        return new ModelAndView("budget/serviceAdd", "service", new Service());
+    }
+
+
+
+    @RequestMapping(value = "/delete_service")
+    public ModelAndView deleteService(@RequestParam(value = "id") String id ) {
+
+       Service service= getServiceById(Integer.parseInt(id));
+        deleteInDB(service);
+        listService.remove(service);
+
+        return new ModelAndView("redirect:/serviceGetAll");
+    }
+
+
+    private Service getServiceById(@RequestParam int id) {
+        System.out.println(id);
+        return listService.stream().filter(f -> f.getId() == id).findFirst().get();
     }
 
 

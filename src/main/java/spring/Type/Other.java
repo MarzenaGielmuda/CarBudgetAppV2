@@ -38,6 +38,15 @@ public class Other implements HibernateEntity {
         @DateTimeFormat(pattern = "dd-MM-yyyy")
         private Date date;
 
+        @Override
+        public String toString() {
+                return "Other{" +
+                        "id=" + id +
+                        ", value=" + value +
+                        ", description='" + description + '\'' +
+                        ", date=" + date +
+                        '}';
+        }
 
         public Other() {
         }

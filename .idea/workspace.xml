@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf12b38-89d5-40b5-8d80-a904d9c3b98f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/spring/hibernate/HibernateDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budgetAppVer2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/budgetAppVer2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/controller/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/controller/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/hibernate/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/hibernate/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/controller/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/controller/DataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/hibernate/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/hibernate/HibernateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/Type/Other.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/Type/Other.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/hibernate/HibernateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/hibernate/HibernateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/otherGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/otherGetAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/partsGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/partsGetAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasGetAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceGetAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/spring/hibernate/HibernateDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spring/hibernate/HibernateDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/Type/Other.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/Type/Other.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/controller/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/controller/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/hibernate/HibernateDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/hibernate/HibernateDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +113,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HibernateDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="budgetAppVer2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="spring.hibernate" />
+      <option name="MAIN_CLASS_NAME" value="spring.hibernate.HibernateDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="budgetAppVer2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="spring.SpringApp" />
@@ -118,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HibernateDaoTest" />
         <item itemvalue="Application.MainHibernateDao" />
         <item itemvalue="Application.MainHibernate" />
       </list>
@@ -151,7 +171,7 @@
       <workItem from="1580203514002" duration="10906000" />
       <workItem from="1580284435401" duration="15407000" />
       <workItem from="1580304139546" duration="599000" />
-      <workItem from="1580374721875" duration="6373000" />
+      <workItem from="1580374721875" duration="14042000" />
     </task>
     <task id="LOCAL-00001" summary="budget of car application v.2 with hibernate and MS SQL">
       <created>1580213336688</created>
@@ -202,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580299597661</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="29-01-2020 add test JUnit (Save)">
+      <created>1580381761932</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580381761932</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +243,8 @@
     <MESSAGE value="29-01-2020 all working option ( connect with DB,List)" />
     <MESSAGE value="29-01-2020 add button function in main menu" />
     <MESSAGE value="29-01-2020 front end" />
-    <option name="LAST_COMMIT_MESSAGE" value="29-01-2020 front end" />
+    <MESSAGE value="29-01-2020 add test JUnit (Save)" />
+    <option name="LAST_COMMIT_MESSAGE" value="29-01-2020 add test JUnit (Save)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="87" key="#Assign_Data_Sources" timestamp="1580134787129">
@@ -231,10 +259,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="87" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1580127995832" />
-    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1580201992456">
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1580386665458">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1580201992456" />
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1580386665458" />
     <state x="430" y="118" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1580213446857">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -243,46 +271,46 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="622" y="354" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1580127858680" />
-    <state x="422" y="23" key="CommitChangelistDialog2" timestamp="1580299595206">
+    <state x="422" y="23" key="CommitChangelistDialog2" timestamp="1580381759440">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="422" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1580299595206" />
-    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1580376370061">
+    <state x="422" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1580381759440" />
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1580389118188">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1580376370061" />
-    <state width="1556" height="183" key="GridCell.Tab.0.bottom" timestamp="1580381123525">
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1580389118188" />
+    <state width="1556" height="260" key="GridCell.Tab.0.bottom" timestamp="1580391015078">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="183" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580381123525" />
-    <state width="1556" height="183" key="GridCell.Tab.0.center" timestamp="1580381123525">
+    <state width="1556" height="260" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
+    <state width="1556" height="260" key="GridCell.Tab.0.center" timestamp="1580391015078">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="183" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1580381123525" />
-    <state width="1556" height="183" key="GridCell.Tab.0.left" timestamp="1580381123525">
+    <state width="1556" height="260" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
+    <state width="1556" height="260" key="GridCell.Tab.0.left" timestamp="1580391015078">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="183" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1580381123525" />
-    <state width="1556" height="183" key="GridCell.Tab.0.right" timestamp="1580381123525">
+    <state width="1556" height="260" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
+    <state width="1556" height="260" key="GridCell.Tab.0.right" timestamp="1580391015078">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="183" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1580381123525" />
-    <state width="1556" height="183" key="GridCell.Tab.1.bottom" timestamp="1580381111616">
+    <state width="1556" height="260" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
+    <state width="1556" height="260" key="GridCell.Tab.1.bottom" timestamp="1580391015078">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="183" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580381111616" />
-    <state width="1556" height="183" key="GridCell.Tab.1.center" timestamp="1580381111616">
+    <state width="1556" height="260" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
+    <state width="1556" height="260" key="GridCell.Tab.1.center" timestamp="1580391015078">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="183" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1580381111616" />
-    <state width="1556" height="183" key="GridCell.Tab.1.left" timestamp="1580381111616">
+    <state width="1556" height="260" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
+    <state width="1556" height="260" key="GridCell.Tab.1.left" timestamp="1580391015078">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="183" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1580381111616" />
-    <state width="1556" height="183" key="GridCell.Tab.1.right" timestamp="1580381111616">
+    <state width="1556" height="260" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
+    <state width="1556" height="260" key="GridCell.Tab.1.right" timestamp="1580391015078">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="183" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1580381111616" />
+    <state width="1556" height="260" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
     <state width="1556" height="270" key="GridCell.Tab.2.bottom" timestamp="1580300016453">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -303,10 +331,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="330" y="84" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1580376111107" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1580299608783">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1580381855063">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1580299608783" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1580381855063" />
     <state x="495" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1580374761744">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -315,14 +343,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="609" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1580374819527" />
-    <state x="571" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1580374853661">
+    <state x="571" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1580385233597">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="571" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1600.860@0.0.1600.860" timestamp="1580374853661" />
-    <state x="506" y="48" key="refactoring.ChangeSignatureDialog" timestamp="1580286262329">
+    <state x="571" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1600.860@0.0.1600.860" timestamp="1580385233597" />
+    <state x="506" y="48" key="refactoring.ChangeSignatureDialog" timestamp="1580387132088">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="506" y="48" key="refactoring.ChangeSignatureDialog/0.0.1600.860@0.0.1600.860" timestamp="1580286262329" />
+    <state x="506" y="48" key="refactoring.ChangeSignatureDialog/0.0.1600.860@0.0.1600.860" timestamp="1580387132088" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

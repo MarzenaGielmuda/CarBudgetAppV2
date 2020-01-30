@@ -54,7 +54,7 @@
                 <td th:text="${petrolGas.id}"></td>
                 <td th:text="${petrolGas.value}"></td>
                 <td th:text="${petrolGas.description}"></td>
-                <td th:text="${petrolGas.date}"></td>
+                <td th:text="${#dates.format(petrolGas.date, 'dd-MM-yyyy')}"></td>
                 <td>
                     <form  th:action="@{/delete_petrolGas}">
                         <input type="hidden" th:name="id" th:value="${petrolGas.id}"/>

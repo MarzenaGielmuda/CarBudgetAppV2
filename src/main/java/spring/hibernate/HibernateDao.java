@@ -10,6 +10,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import java.util.List;
 
 
+
 public class HibernateDao {
 
     public void save(HibernateEntity hibernateEntity) {

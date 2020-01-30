@@ -52,10 +52,10 @@ public class DataSource {
         serviceSet.add(service);
 
 
-        hibernateDao.update( other);
-        hibernateDao.update( petrolGas);
-        hibernateDao.update( service);
-        hibernateDao.update( parts);
+//        hibernateDao.update( other);
+//        hibernateDao.update( petrolGas);
+//        hibernateDao.update( service);
+//        hibernateDao.update( parts);
     }
 
 

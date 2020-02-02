@@ -3,17 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6cf12b38-89d5-40b5-8d80-a904d9c3b98f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/Type/Other.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/Type/Other.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/hibernate/HibernateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/hibernate/HibernateDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/otherGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/otherGetAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/partsGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/partsGetAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasGetAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceGetAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/spring/hibernate/HibernateDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spring/hibernate/HibernateDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/Type/Other.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/Type/Other.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/controller/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/controller/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/hibernate/HibernateDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/hibernate/HibernateDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/MainIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/MainIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/totalBudget.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/totalBudget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/MainIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/MainIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/otherGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/otherGetAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/partsGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/partsGetAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/petrolGasGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/petrolGasGetAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/serviceGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/serviceGetAll.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +169,13 @@
       <workItem from="1580203514002" duration="10906000" />
       <workItem from="1580284435401" duration="15407000" />
       <workItem from="1580304139546" duration="599000" />
-      <workItem from="1580374721875" duration="14042000" />
+      <workItem from="1580374721875" duration="14864000" />
+      <workItem from="1580457324000" duration="2207000" />
+      <workItem from="1580506033344" duration="1542000" />
+      <workItem from="1580656097149" duration="646000" />
+      <workItem from="1580673592735" duration="233000" />
+      <workItem from="1580674258967" duration="273000" />
+      <workItem from="1580676256499" duration="243000" />
     </task>
     <task id="LOCAL-00001" summary="budget of car application v.2 with hibernate and MS SQL">
       <created>1580213336688</created>
@@ -229,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580381761932</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="29-01-2020 corrected date format in front-end">
+      <created>1580391559550</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580391559550</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +255,8 @@
     <MESSAGE value="29-01-2020 add button function in main menu" />
     <MESSAGE value="29-01-2020 front end" />
     <MESSAGE value="29-01-2020 add test JUnit (Save)" />
-    <option name="LAST_COMMIT_MESSAGE" value="29-01-2020 add test JUnit (Save)" />
+    <MESSAGE value="29-01-2020 corrected date format in front-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="29-01-2020 corrected date format in front-end" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="87" key="#Assign_Data_Sources" timestamp="1580134787129">
@@ -271,46 +283,46 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="622" y="354" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1580127858680" />
-    <state x="422" y="23" key="CommitChangelistDialog2" timestamp="1580381759440">
+    <state x="422" y="23" key="CommitChangelistDialog2" timestamp="1580391556930">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="422" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1580381759440" />
+    <state x="422" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1580391556930" />
     <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1580389118188">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1580389118188" />
-    <state width="1556" height="260" key="GridCell.Tab.0.bottom" timestamp="1580391015078">
+    <state width="1556" height="260" key="GridCell.Tab.0.bottom" timestamp="1580676503936">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
-    <state width="1556" height="260" key="GridCell.Tab.0.center" timestamp="1580391015078">
+    <state width="1556" height="260" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580676503936" />
+    <state width="1556" height="260" key="GridCell.Tab.0.center" timestamp="1580676503936">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
-    <state width="1556" height="260" key="GridCell.Tab.0.left" timestamp="1580391015078">
+    <state width="1556" height="260" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1580676503936" />
+    <state width="1556" height="260" key="GridCell.Tab.0.left" timestamp="1580676503936">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
-    <state width="1556" height="260" key="GridCell.Tab.0.right" timestamp="1580391015078">
+    <state width="1556" height="260" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1580676503936" />
+    <state width="1556" height="260" key="GridCell.Tab.0.right" timestamp="1580676503936">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
-    <state width="1556" height="260" key="GridCell.Tab.1.bottom" timestamp="1580391015078">
+    <state width="1556" height="260" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1580676503936" />
+    <state width="1556" height="260" key="GridCell.Tab.1.bottom" timestamp="1580676503936">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
-    <state width="1556" height="260" key="GridCell.Tab.1.center" timestamp="1580391015078">
+    <state width="1556" height="260" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580676503936" />
+    <state width="1556" height="260" key="GridCell.Tab.1.center" timestamp="1580676503936">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
-    <state width="1556" height="260" key="GridCell.Tab.1.left" timestamp="1580391015078">
+    <state width="1556" height="260" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1580676503936" />
+    <state width="1556" height="260" key="GridCell.Tab.1.left" timestamp="1580676503936">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
-    <state width="1556" height="260" key="GridCell.Tab.1.right" timestamp="1580391015078">
+    <state width="1556" height="260" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1580676503936" />
+    <state width="1556" height="260" key="GridCell.Tab.1.right" timestamp="1580676503936">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1580391015078" />
+    <state width="1556" height="260" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1580676503936" />
     <state width="1556" height="270" key="GridCell.Tab.2.bottom" timestamp="1580300016453">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -331,14 +343,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="330" y="84" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1580376111107" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1580381855063">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1580391571968">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1580381855063" />
-    <state x="495" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1580374761744">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1580391571968" />
+    <state x="455" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1580673592656">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="495" y="252" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1580374761744" />
+    <state x="455" y="266" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1580673592656" />
     <state x="609" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580374819527">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

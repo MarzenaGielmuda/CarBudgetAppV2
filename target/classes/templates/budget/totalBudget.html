@@ -85,19 +85,19 @@
         background-color: rgba(168,189,4, .8);
     }
 
-    ._rank{
+    ._id{
         min-width: 80px;
     }
-    ._id{
-        min-width: 60px;
-    }
-    ._name{
+    /*._id{*/
+    /*    min-width: 60px;*/
+    /*}*/
+    ._value{
         min-width: 130px;
     }
-    ._surname{
+    ._description{
         min-width: 130px;
     }
-    ._year{
+    ._date{
         min-width: 80px;
     }
     ._section{
@@ -170,105 +170,24 @@
 <div class="container">
     <h1> Scroll to View</h1>
 
-<!--    <div class="row">-->
-<!--        <div id="title">-->
-<!--            <div style="text-align: center;"/>-->
-<!--            <h1>TOTAL BUDGET</h1>-->
-<!--        </div>-->
-<!--        <div style="text-align: center;"/>-->
-<!--        <br/>-->
-<!--        <br/>-->
-<!--        <table>-->
-<!--            <h2>SERVICE</h2>-->
-<!--            <thead>-->
-<!--            <tr>-->
-<!--                <th>id</th>-->
-<!--                <th>value</th>-->
-<!--                &lt;!&ndash;                <th>date</th>&ndash;&gt;-->
-<!--                <th>description</th>-->
-<!--                <th>Action</th>-->
-<!--            </tr>-->
-<!--            </thead>-->
-<!--            <tbody>-->
-<!--            <tr data-th-each="service : ${listService}">-->
-<!--                <td th:text="${service.id}"></td>-->
-<!--                <td th:text="${service.value}"></td>-->
-<!--                <td th:text="${service.description}"></td>-->
-<!--            </tr>-->
-<!--            </tbody>-->
-<!--        </table>-->
-<!--        <br/>-->
-<!--        <br/>-->
-<!--        <table>-->
-<!--            <h2>PETROL/GAS</h2>-->
-<!--            <thead>-->
-<!--            <tr>-->
-<!--                <th>id</th>-->
-<!--                <th>value</th>-->
-<!--                &lt;!&ndash;                <th>date</th>&ndash;&gt;-->
-<!--                <th>description</th>-->
-<!--                <th>Action</th>-->
-<!--            </tr>-->
-<!--            </thead>-->
-<!--            <tbody>-->
-<!--            <tr data-th-each="petrolGas : ${listPetrolGas}">-->
-<!--                <td th:text="${petrolGas.id}"></td>-->
-<!--                <td th:text="${petrolGas.value}"></td>-->
-<!--                <td th:text="${petrolGas.description}"></td>-->
-<!--            </tr>-->
-<!--            </tbody>-->
-<!--        </table>-->
-<!--        <br/>-->
-<!--        <br/>-->
-<!--        <table>-->
-<!--            <h2>OTHER</h2>-->
-<!--            <thead>-->
-<!--            <tr>-->
-<!--                <th>id</th>-->
-<!--                <th>value</th>-->
-<!--                &lt;!&ndash;                <th>date</th>&ndash;&gt;-->
-<!--                <th>description</th>-->
-<!--                <th>Action</th>-->
-<!--            </tr>-->
-<!--            </thead>-->
-<!--            <tbody>-->
-
-<!--            <tr data-th-each="other : ${listOther}">-->
-<!--                <td th:text="${other.id}"></td>-->
-<!--                <td th:text="${other.value}"></td>-->
-<!--                <td th:text="${other.description}"></td>-->
-<!--            </tr>-->
-
-<!--            </tbody>-->
-
-<!--        </table>-->
-
-        <!--        <h1>Sticky Table Headers by <code>position: sticky;</code></h1>-->
-        <!--        <p>Trying out to make a sweet table with sticky table headers if their table is in the viewport. (Like the iOS names list names beginning capital letter)</p>-->
-        <!--        <p class="warning">Supported by Firefox and Safari [<a href="http://caniuse.com/#feat=css-sticky" target="_blank">caniuse.com#sticky</a>]</p>-->
-
-
-<!--        <h1>Sticky Table Headers by <code>position: sticky;</code></h1>-->
-<!--        <p>Trying out to make a sweet table with sticky table headers if their table is in the viewport. (Like the iOS names list names beginning capital letter)</p>-->
-<!--        <p class="warning">Supported by Firefox and Safari [<a href="http://caniuse.com/#feat=css-sticky" target="_blank">caniuse.com#sticky</a>]</p>-->
         <main class="st_viewport">
             <div class="st_wrap_table" th:object="${listParts}">
                 <header class="st_table_header">
                     <h2>List Parts</h2>
                     <div class="st_row">
-                        <div class="st_column _rank">Id</div>
-                        <div class="st_column _name">Value</div>
-                        <div class="st_column _surname">Description</div>
-                        <div class="st_column _year">Date</div>
+                        <div class="st_column _id">Id</div>
+                        <div class="st_column _value">Value</div>
+                        <div class="st_column _description">Description</div>
+                        <div class="st_column _date">Date</div>
                     </div>
                 </header>
                 <div data-th-each="parts: ${listParts}">
                     <div class="st_table">
                         <div class="st_row">
-                            <div class="st_column _rank"  th:text="${parts.id}"></div>
-                            <div class="st_column _name" th:text="${parts.value}"></div>
-                            <div class="st_column _surname" th:text="${parts.description}"></div>
-                            <div class="st_column _year" th:text="${parts.date}"></div>
+                            <div class="st_column _id" th:text="${parts.id}"></div>
+                            <div class="st_column _value" th:text="${parts.value}"></div>
+                            <div class="st_column _description" th:text="${parts.description}"></div>
+                            <div class="st_column _date" th:text="${parts.date}"></div>
                         </div>
                     </div>
                 </div>
@@ -277,19 +196,19 @@
                     <header class="st_table_header">
                         <h2>List Service</h2>
                         <div class="st_row">
-                            <div class="st_column _rank">Id</div>
-                            <div class="st_column _name">Value</div>
-                            <div class="st_column _surname">Description</div>
-                            <div class="st_column _year">Date</div>
+                            <div class="st_column _id">Id</div>
+                            <div class="st_column _value">Value</div>
+                            <div class="st_column _description">Description</div>
+                            <div class="st_column _date">Date</div>
                         </div>
                     </header>
                     <div data-th-each="service: ${listService}">
                         <div class="st_table">
                             <div class="st_row">
-                                <div class="st_column _rank"  th:text="${service.id}"></div>
-                                <div class="st_column _name" th:text="${service.value}"></div>
-                                <div class="st_column _surname" th:text="${service.description}"></div>
-                                <div class="st_column _year" th:text="${service.date}"></div>
+                                <div class="st_column _id" th:text="${service.id}"></div>
+                                <div class="st_column _value" th:text="${service.value}"></div>
+                                <div class="st_column _description" th:text="${service.description}"></div>
+                                <div class="st_column _date" th:text="${service.date}"></div>
                             </div>
 
                         </div>
@@ -298,19 +217,19 @@
                         <header class="st_table_header">
                             <h2>List Other</h2>
                             <div class="st_row">
-                                <div class="st_column _rank">Id</div>
-                                <div class="st_column _name">Value</div>
-                                <div class="st_column _surname">Description</div>
-                                <div class="st_column _year">Date</div>
+                                <div class="st_column _id">Id</div>
+                                <div class="st_column _value">Value</div>
+                                <div class="st_column _description">Description</div>
+                                <div class="st_column _date">Date</div>
                             </div>
                         </header>
                         <div data-th-each="other: ${listOther}">
                             <div class="st_table">
                                 <div class="st_row">
-                                    <div class="st_column _rank"  th:text="${other.id}"></div>
-                                    <div class="st_column _name" th:text="${other.value}"></div>
-                                    <div class="st_column _surname" th:text="${other.description}"></div>
-                                    <div class="st_column _year" th:text="${other.date}"></div>
+                                    <div class="st_column _id" th:text="${other.id}"></div>
+                                    <div class="st_column _value" th:text="${other.value}"></div>
+                                    <div class="st_column _description" th:text="${other.description}"></div>
+                                    <div class="st_column _date" th:text="${other.date}"></div>
                                 </div>
 
                             </div>
@@ -319,24 +238,25 @@
                             <header class="st_table_header">
                                 <h2>List Petrol/Gas</h2>
                                 <div class="st_row">
-                                    <div class="st_column _rank">Id</div>
-                                    <div class="st_column _name">Value</div>
-                                    <div class="st_column _surname">Description</div>
-                                    <div class="st_column _year">Date</div>
+                                    <div class="st_column _id">Id</div>
+                                    <div class="st_column _value">Value</div>
+                                    <div class="st_column _description">Description</div>
+                                    <div class="st_column _date">Date</div>
                                 </div>
                             </header>
                             <div data-th-each="petrolGas: ${listPetrolGas}">
                                 <div class="st_table">
                                     <div class="st_row">
-                                        <div class="st_column _rank"  th:text="${petrolGas.id}"></div>
-                                        <div class="st_column _name" th:text="${petrolGas.value}"></div>
-                                        <div class="st_column _surname" th:text="${petrolGas.description}"></div>
-                                        <div class="st_column _year" th:text="${petrolGas.date}"></div>
+                                        <div class="st_column _id" th:text="${petrolGas.id}"></div>
+                                        <div class="st_column _value" th:text="${petrolGas.value}"></div>
+                                        <div class="st_column _description" th:text="${petrolGas.description}"></div>
+                                        <div class="st_column _date" th:text="${petrolGas.date}"></div>
                                     </div>
 
                                 </div>
                             </div>
         </main>
+    <button><a  class="button1" href="/MainIndex" >RETURN</a></button>
 </div>
         <footer>
   <pre>

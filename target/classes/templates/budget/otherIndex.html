@@ -2,15 +2,39 @@
 <html lang="pl" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Budget Car</title>
-    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" type="text/css">
+    <title>Add Other </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style>
+    .button {
+        background-color: yellow; /* Green */
+        border: none;
+        color: black;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
 
+    }
+    .button1 {
+        background-color: red;
+        border: none;
+        color: black;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
 
-    h2.ridge {border-style: ridge;
+    }
+
+    h1.ridge {border-style: ridge;
         border-width: medium;
-        border-color: aliceblue;
+        border-color: red;
         border-radius: 5px;
         padding-top: 50px;
         padding-right: 50px;
@@ -19,39 +43,218 @@
         text-align: center;
     }
 
-    .button {
-        background-color: white;
-        color: black;
-        padding: 5px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
+
+    *{
+        margin: 0;
+        pading: 0;
+        box-sizing: border-box;
     }
-    .button:hover{
-        background-color: gray;
+    body{
+        background-color: rgb(63,72,83);
+        font-family: sans-serif;
+        color: rgb(220,220,220);
+        padding: 50px;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    h1{
+        font-weight: 400;
+    }
+    a{
+        color: inherit;
+    }
+    p{
+        margin-top: .7em;
     }
 
-    .button2 {
-        background-color: yellowgreen;
+    .warning{
+        color: rgb(62,148,236);
+    }
+    .st_viewport{
+        max-height: 500px;
+        overflow: auto;
     }
 
+    [data-table_id="1"]{
+        background-color: rgb(255,115,0);
+    }
+    [data-table_id="2"]{
+        background-color: rgb(61,53,39);
+        color: rgb(220,220,220);
+    }
+    [data-table_id="3"]{
+        background-color: rgba(168,189,4, .8);
+    }
+
+    ._id{
+        min-width: 80px;
+    }
+    /*._id{*/
+    /*    min-width: 60px;*/
+    /*}*/
+    ._value{
+        min-width: 130px;
+    }
+    ._description{
+        min-width: 130px;
+    }
+    ._date{
+        min-width: 80px;
+    }
+    ._section{
+        min-width: 130px;
+    }
+
+    pre{
+        overflow: auto;
+    }
+
+    /** Sticky table styles **/
+    .st_viewport{
+        background-color: rgb(62,148,236);
+        color: rgb(27,30,36);
+        margin: 20px 0;
+    }
+    /* ###  Table wrap */
+    .st_wrap_table{
+
+    }
+    /* ##   header */
+    .st_table_header{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+        background-color: rgb(27,30,36);
+        color: rgb(220,220,220);
+    }
+    .st_table_header h2{
+        font-weight: 400;
+        margin: 0 20px;
+        padding: 20px 0 0;
+    }
+    .st_table_header .st_row{
+        color: rgba(220,220,220, .7);
+    }
+    .st_table_header .st_column{
+
+    }
+    /* ##  table */
+    .st_table{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    /* #   row */
+    .st_row{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0;
+    }
+    .st_table .st_row:nth-child(even){
+        background-color: rgba(0,0,0, .1)
+    }
+    /* #   column */
+    .st_column{
+        padding: 10px 20px;
+    }
 </style>
-<body bgcolor=#e0ffff>
-<div>
-    <div style="text-align: center;"/>
-    <h2 class="ridge" >BUDGET OF CAR - OTHER</h2>
+
+<div class="container">
+    <h1> BUDGET OF CAR - OTHER</h1>
+
+    <main class="st_viewport">
+        <div class="st_wrap_table"  data-table_id="3" >
+            <h2 class="ridge" >PLEASE CHOOSE AN OPTION</h2>
+            <button><a href="/otherAdd" class="button" >Add other car exploitation expenses</a></button>
+            <button><a href="/otherGetAll" class="button">View all other car exploitation expenses list</a></button>
+        </div>
 
 
-
-    <button><a href="/otherAdd" class="button" >Add other car exploitation expenses</a></button>
-    <button><a href="/otherGetAll" class="button">View all other car exploitation expenses list</a></button>
-    <br/>
-    <br/>
-    <button><a  class="button2" href="/MainIndex" >RETURN</a></button>
+    </main>
+    <button><a href="/MainIndex" >Main Menu</a></button>
 </div>
-</div>
+<footer>
+  <pre>
+    <code>
+<!--/**-->
+        <!-- * Sticky Table Headers-->
+        <!-- *-->
+        <!-- * @author <a href="http://elementcode.de" tatget="_blank">Wolf Wortmann</a> &lt;http://elementcode.de&gt; / &lt;ww@elementcode.de&gt;-->
+        <!-- * @copyright (c) Copyright <a href="http://elementcode.de" tatget="_blank">Wolf Wortmann</a> &lt;http://elementcode.de&gt; / &lt;ww@elementcode.de&gt;-->
+        <!-- * @license Feel free to use, modify and redistribute this code. But keep this license AND copyright notice.-->
+        <!-- */-->
+    </code>
+  </pre>
+</footer>
+
 </body>
 </html>
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="pl" xmlns:th="www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Budget Car</title>-->
+<!--    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" type="text/css">-->
+<!--</head>-->
+<!--<style>-->
+
+
+<!--    h2.ridge {border-style: ridge;-->
+<!--        border-width: medium;-->
+<!--        border-color: aliceblue;-->
+<!--        border-radius: 5px;-->
+<!--        padding-top: 50px;-->
+<!--        padding-right: 50px;-->
+<!--        padding-bottom: 50px;-->
+<!--        padding-left: 50px;-->
+<!--        text-align: center;-->
+<!--    }-->
+
+<!--    .button {-->
+<!--        background-color: white;-->
+<!--        color: black;-->
+<!--        padding: 5px 15px;-->
+<!--        text-align: center;-->
+<!--        text-decoration: none;-->
+<!--        display: inline-block;-->
+<!--        font-size: 20px;-->
+<!--    }-->
+<!--    .button:hover{-->
+<!--        background-color: gray;-->
+<!--    }-->
+
+<!--    .button2 {-->
+<!--        background-color: yellowgreen;-->
+<!--    }-->
+
+<!--</style>-->
+<!--<body bgcolor=#e0ffff>-->
+<!--<div>-->
+<!--    <div style="text-align: center;"/>-->
+<!--    <h2 class="ridge" >BUDGET OF CAR - OTHER</h2>-->
+
+
+
+<!--    <button><a href="/otherAdd" class="button" >Add other car exploitation expenses</a></button>-->
+<!--    <button><a href="/otherGetAll" class="button">View all other car exploitation expenses list</a></button>-->
+<!--    <br/>-->
+<!--    <br/>-->
+<!--    <button><a  class="button2" href="/MainIndex" >RETURN</a></button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
 
 

@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cf12b38-89d5-40b5-8d80-a904d9c3b98f" name="Default Changelist" comment="">
+    <list default="true" id="6cf12b38-89d5-40b5-8d80-a904d9c3b98f" name="Default Changelist" comment="05-02-2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/Type/Other.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/Type/Other.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/MainIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/MainIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/ScopeExample.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/otherAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/otherAdd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/otherGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/otherGetAll.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/otherIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/otherIndex.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/partsAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/partsAdd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/partsGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/partsGetAll.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/partsIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/partsIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasAdd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasGetAll.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/petrolGasIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceAdd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceGetAll.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/serviceIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/budget/totalBudget.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/budget/totalBudget.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/Type/Other.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/Type/Other.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/MainIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/MainIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/otherAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/otherAdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/otherGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/otherGetAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/partsAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/partsAdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/partsGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/partsGetAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/petrolGasAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/petrolGasAdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/petrolGasGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/petrolGasGetAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/serviceAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/serviceAdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/serviceGetAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/serviceGetAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/serviceIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/serviceIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/totalBudget.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/totalBudget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/otherIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/otherIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/partsIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/partsIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/budget/petrolGasIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/budget/petrolGasIndex.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +184,9 @@
       <workItem from="1580674258967" duration="273000" />
       <workItem from="1580676256499" duration="1644000" />
       <workItem from="1580817944581" duration="13842000" />
-      <workItem from="1580837224454" duration="2158000" />
+      <workItem from="1580837224454" duration="3066000" />
+      <workItem from="1580900633706" duration="108000" />
+      <workItem from="1580903860474" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="budget of car application v.2 with hibernate and MS SQL">
       <created>1580213336688</created>
@@ -283,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580824626882</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="04-02-2020 front-end OF ALL OPTION and app port 8080">
+      <created>1580839561677</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1580839561677</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +298,8 @@
     <MESSAGE value="02-02-2020 front-end in total budget" />
     <MESSAGE value="04-02-2020 format date total budget" />
     <MESSAGE value="04-02-2020 front-end MainIndex" />
-    <option name="LAST_COMMIT_MESSAGE" value="04-02-2020 front-end MainIndex" />
+    <MESSAGE value="04-02-2020 front-end OF ALL OPTION and app port 8080" />
+    <option name="LAST_COMMIT_MESSAGE" value="04-02-2020 front-end OF ALL OPTION and app port 8080" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="87" key="#Assign_Data_Sources" timestamp="1580134787129">
@@ -329,46 +326,46 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="622" y="354" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1580127858680" />
-    <state x="422" y="23" key="CommitChangelistDialog2" timestamp="1580824624205">
+    <state x="422" y="23" key="CommitChangelistDialog2" timestamp="1580904060366">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="422" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1580824624205" />
+    <state x="422" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1580904060366" />
     <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1580389118188">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1580389118188" />
-    <state width="1556" height="260" key="GridCell.Tab.0.bottom" timestamp="1580839403455">
+    <state width="1556" height="260" key="GridCell.Tab.0.bottom" timestamp="1580840311561">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580839403455" />
-    <state width="1556" height="260" key="GridCell.Tab.0.center" timestamp="1580839403455">
+    <state width="1556" height="260" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580840311561" />
+    <state width="1556" height="260" key="GridCell.Tab.0.center" timestamp="1580840311561">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1580839403455" />
-    <state width="1556" height="260" key="GridCell.Tab.0.left" timestamp="1580839403454">
+    <state width="1556" height="260" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1580840311561" />
+    <state width="1556" height="260" key="GridCell.Tab.0.left" timestamp="1580840311561">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1580839403454" />
-    <state width="1556" height="260" key="GridCell.Tab.0.right" timestamp="1580839403455">
+    <state width="1556" height="260" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1580840311561" />
+    <state width="1556" height="260" key="GridCell.Tab.0.right" timestamp="1580840311561">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1580839403455" />
-    <state width="1556" height="260" key="GridCell.Tab.1.bottom" timestamp="1580839403455">
+    <state width="1556" height="260" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1580840311561" />
+    <state width="1556" height="260" key="GridCell.Tab.1.bottom" timestamp="1580840311562">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580839403455" />
-    <state width="1556" height="260" key="GridCell.Tab.1.center" timestamp="1580839403455">
+    <state width="1556" height="260" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1580840311562" />
+    <state width="1556" height="260" key="GridCell.Tab.1.center" timestamp="1580840311562">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1580839403455" />
-    <state width="1556" height="260" key="GridCell.Tab.1.left" timestamp="1580839403455">
+    <state width="1556" height="260" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1580840311562" />
+    <state width="1556" height="260" key="GridCell.Tab.1.left" timestamp="1580840311562">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1580839403455" />
-    <state width="1556" height="260" key="GridCell.Tab.1.right" timestamp="1580839403455">
+    <state width="1556" height="260" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1580840311562" />
+    <state width="1556" height="260" key="GridCell.Tab.1.right" timestamp="1580840311562">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="260" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1580839403455" />
+    <state width="1556" height="260" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1580840311562" />
     <state width="1556" height="270" key="GridCell.Tab.2.bottom" timestamp="1580300016453">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -389,14 +386,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="330" y="84" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1580376111107" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1580824634723">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1580839566796">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1580824634723" />
-    <state x="455" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1580837224595">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1580839566796" />
+    <state x="455" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1580900633815">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="455" y="266" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1580837224595" />
+    <state x="455" y="266" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1580900633815" />
     <state x="609" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580374819527">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

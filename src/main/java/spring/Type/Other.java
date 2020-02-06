@@ -1,10 +1,14 @@
 package spring.Type;
 
 import lombok.*;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import spring.hibernate.HibernateEntity;
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -35,7 +39,8 @@ public class Other implements HibernateEntity {
         @Column(name = "date")
         @NonNull
         @Setter @Getter
-        @DateTimeFormat(pattern = "dd-MM-yyyy")
+        @DateTimeFormat(pattern = "yyyy-mm-dd")
+//        @Temporal(TemporalType.DATE)
         private Date date;
 
 

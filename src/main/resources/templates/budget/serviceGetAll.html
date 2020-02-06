@@ -188,7 +188,7 @@
                             <div class="st_column _id" th:text="${service.id}"></div>
                             <div class="st_column _value" th:text="${service.value}"></div>
                             <div class="st_column _description" th:text="${service.description}"></div>
-                            <div class="st_column _date" th:text="${#dates.format(service.date, 'dd-MM-yyyy')}"></div>
+                            <div class="st_column _date" th:text="${#dates.format(service.date, 'yyyy-MM-dd')}"></div>
 
                             <div></div>
                             <form th:action="@{/delete_service}">

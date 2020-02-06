@@ -34,7 +34,7 @@ public class Service implements HibernateEntity {
     @Column(name = "date")
     @NonNull
     @Setter @Getter
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
     private Date date;
 
 

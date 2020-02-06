@@ -3,6 +3,7 @@ package spring.controller;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,6 +15,9 @@ import spring.Type.Service;
 import spring.hibernate.HibernateDao;
 import spring.hibernate.HibernateEntity;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -30,6 +34,7 @@ public class AppController {
     private List<Service> listService;
 
     private HibernateDao hibernateDao;
+    private WebDataBinder webDataBinder;
 
     public AppController() {
         try {
@@ -48,7 +53,13 @@ public class AppController {
             listService = DataSource.getServiceList();
         }
     }
-//
+
+    @InitBinder
+    public void initBinder(WebDataBinder binder){
+        binder.registerCustomEditor(       Date.class,
+                new CustomDateEditor(new SimpleDateFormat("dd-MM-yyyy"), true, 10));
+    }
+
     @RequestMapping("/")
     public String indexGet() {
         return "budget/MainIndex";
@@ -99,11 +110,17 @@ public class AppController {
 
 //    @InitBinder
 //    private void dateBinder(WebDataBinder binder){
-//        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
 //        CustomDateEditor editor= new CustomDateEditor(dateFormat, true);
 //        binder.registerCustomEditor(Date.class, editor);
 //    }
 
+//    @InitBinder
+//    private void initBinder(WebDataBinder binder){
+//        webDataBinder = binder;
+//        binder.registerCustomEditor(       Date.class,
+//                new CustomDateEditor(new SimpleDateFormat("dd-MM-yyyy"), true, 10));
+//    }
 
     private void updateInDB(HibernateEntity hibernateEntity){
         if (DataSource.isDataBaseConnection){
@@ -121,6 +138,7 @@ public class AppController {
             hibernateDao.delete(hibernateEntity);
         }
     }
+
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@        Other   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -142,7 +160,17 @@ public class AppController {
 
     @RequestMapping(value = "/add_other")
 
-    public ModelAndView saveOther(@ModelAttribute(value = "other") Other other) {
+    public ModelAndView saveOther(@Valid @ModelAttribute(value = "other") Other other, @RequestParam(value = "date") String date) {
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date dateParsed = format.parse(date);
+            other.setDate(dateParsed);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            other.setDate(new Date());
+        }
+
 
         if (other.getId() == 0) {
             System.out.println("is add");
@@ -150,11 +178,24 @@ public class AppController {
             listOther.add(other);
             addInDB(other);
         } else {
+
            updateOtherInList(other);
            updateInDB(other);
         }
         return new ModelAndView("redirect:/otherGetAll");
     }
+//    @RequestMapping(value="/createPost", method=RequestMethod.POST)
+//    public String createPost(@ModelAttribute Post post, String date){
+//        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+//        String currentUser = authentication.getName();
+//        post.setUser(currentUser);
+//
+//        Utilities utilities = new Utilities();
+//        post.setDate(utilities.getDateFromString(post.getDatestring()));
+//
+//        postRepository.save(post);
+//        return "redirect:/";
+//    }
 
 
         private void updateOtherInList(Other other) {
@@ -207,6 +248,18 @@ public class AppController {
         return listOther.stream().filter(f -> f.getId() == id).findFirst().get();
     }
 
+    public Date getDateFromString(String dateString){
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        java.util.Date parsed = null;
+        try {
+            parsed = format.parse(dateString);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        Date date = new Date(parsed.getTime());
+        return date;
+    }
+
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Parts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
     @RequestMapping("/partsGetAll")
@@ -227,7 +280,16 @@ public class AppController {
 
     @RequestMapping(value = "/add_parts")
 
-    public ModelAndView saveParts(@ModelAttribute(value = "parts") Parts parts) {
+    public ModelAndView saveParts(@Valid @ModelAttribute(value = "parts") Parts parts, @RequestParam(value = "date") String date) {
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date dateParsed = format.parse(date);
+            parts.setDate(dateParsed);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            parts.setDate(new Date());
+        }
 
         if (parts.getId() == 0) {
             System.out.println("is add");
@@ -306,8 +368,16 @@ public class AppController {
 
     @RequestMapping(value = "/add_petrolGas")
 
-    public ModelAndView savePetrolGas(@ModelAttribute(value = "petrolGas") PetrolGas petrolGas) {
+    public ModelAndView savePetrolGas(@Valid @ModelAttribute(value = "petrolGas") PetrolGas petrolGas, @RequestParam(value = "date") String date) {
 
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date dateParsed = format.parse(date);
+            petrolGas.setDate(dateParsed);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            petrolGas.setDate(new Date());
+        }
         if (petrolGas.getId() == 0) {
             System.out.println("is add");
             petrolGas.setId(listPetrolGas.size() + 1);
@@ -384,7 +454,16 @@ public class AppController {
 
     @RequestMapping(value = "/add_service")
 
-    public ModelAndView saveService(@ModelAttribute(value = "service") Service service) {
+    public ModelAndView saveService(@Valid @ModelAttribute(value = "service") Service service, @RequestParam(value = "date") String date) {
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date dateParsed = format.parse(date);
+            service.setDate(dateParsed);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            service.setDate(new Date());
+        }
 
         if (service.getId() == 0) {
             System.out.println("is add");

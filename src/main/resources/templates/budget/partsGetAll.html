@@ -188,7 +188,7 @@
                         <div class="st_column _id" th:text="${parts.id}"></div>
                         <div class="st_column _value" th:text="${parts.value}"></div>
                         <div class="st_column _description" th:text="${parts.description}"></div>
-                        <div class="st_column _date" th:text="${#dates.format(parts.date, 'dd-MM-yyyy')}"></div>
+                        <div class="st_column _date" th:text="${#dates.format(parts.date, 'yyyy-MM-dd')}"></div>
 
                         <div></div>
                         <form th:action="@{/delete_parts}">

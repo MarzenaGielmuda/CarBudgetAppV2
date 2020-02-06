@@ -65,6 +65,8 @@ public class HibernateDao {
         criteria.from(type);
         List<T> data = session.createQuery(criteria).getResultList();
         tx.commit();
+
+
         return data;
     }
 }

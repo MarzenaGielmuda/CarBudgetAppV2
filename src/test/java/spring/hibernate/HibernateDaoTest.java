@@ -1,10 +1,17 @@
 package spring.hibernate;
 
 
-import org.junit.Assert;
-import org.junit.jupiter.api.BeforeAll;
+
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+
+import static  org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+
 import spring.Type.Other;
 import spring.Type.Parts;
 import spring.Type.PetrolGas;
@@ -14,28 +21,47 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+//@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+    @AutoConfigureMockMvc
 class HibernateDaoTest {
 
-    public HibernateDaoTest() {
-    }
-
-    private HibernateDao hibernateDao;
-
-    private Other testOther;
-    private Service testService;
-    private Parts testParts;
-    private PetrolGas testPetrolGas;
-
-    private List<Other> otherListTest;
-    private List<Service> serviceListTest;
-    private List<PetrolGas> petrolGasListTest;
-    private List<Parts> partsListTest;
-
-    private List<Other> dataBaseOtherListTest;
-    private List<Service> dataBaseServiceListTest;
-    private List<PetrolGas> dataBasePetrolGasListTest;
-    private List<Parts> dataBasePartsListTest;
+//
+//
+//    private HibernateDao hibernateDao;
+//
+//    private Other testOther;
+//    private Service testService;
+//    private Parts testParts;
+//    private PetrolGas testPetrolGas;
+//
+//    private List<Other> otherListTest;
+//    private List<Service> serviceListTest;
+//    private List<PetrolGas> petrolGasListTest;
+//    private List<Parts> partsListTest;
+//
+//    private List<Other> dataBaseOtherListTest;
+//    private List<Service> dataBaseServiceListTest;
+//    private List<PetrolGas> dataBasePetrolGasListTest;
+//    private List<Parts> dataBasePartsListTest;
+//
+//    @Autowired
+//    private MockMvc mockMvc;
+//
+//
+//    @Test
+//    void saveOtherShouldSaveInDB() throws Exception {
+//
+////        otherListTest = new ArrayList<>();
+////        testOther = new Other(250,"Test",new Date(2020-01-19));
+////        otherListTest.add(testOther);
+////
+//
+//        mockMvc.perform(get("/MainIndex/"));
+//    }
 
 //    @BeforeAll
 //     void supplyList(){
@@ -62,37 +88,6 @@ class HibernateDaoTest {
 //    }
 
 
-
-    @Test
-    void saveOtherShouldSaveInDB(){
-        testOther = new Other(250,"Test",new Date(2020-01-19));
-//        hibernateDao.save(testOther);
-//        Other other1 =dataBaseOtherListTest.get(testOther.getId());
-//        System.out.println(other1.toString());
-        System.out.println(testOther.toString());
-//        Assert.assertEquals(dataBaseOtherListTest.get(testOther.getId()),testOther);
-        Assert.assertEquals(testOther,testOther);
-    }
-
-//    @Test
-//    void savePartsShouldSaveInDB(){
-//        hibernateDao.save(testParts);
-//        Assert.assertEquals(dataBasePartsListTest.get(testParts.getId()),testParts);
-//    }
-//
-//    @Test
-//     void savePetrolGasShouldSaveInDB(){
-//        hibernateDao.save(testPetrolGas);
-//        Assert.assertEquals(dataBasePetrolGasListTest.get(testPetrolGas.getId()),testPetrolGas);
-//    }
-//
-//
-//    @Test
-//     void saveServiceShouldSaveInDB(){
-//        hibernateDao.save(testService);
-////        Assert.assertEquals(dataBaseServiceListTest.get(testService.getId()),testService);
-//        Assert.assertEquals(testOther,testOther);
-//    }
 
 
 

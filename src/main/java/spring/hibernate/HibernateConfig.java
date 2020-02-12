@@ -19,8 +19,10 @@ public class HibernateConfig {
             try {
                 Configuration configuration = new Configuration();
                 Properties settings = new Properties();
-                settings.put(Environment.DRIVER, "heroku pg:psql postgresql-dimensional-42338 --app budgetcarver2");
-                settings.put(Environment.URL, "postgres://njbvswdsolhkun:4f4db84de8e6c4b372a79d86e2da5a1b3f22b5acaefbc76e0505d36493e24851@ec2-54-246-90-10.eu-west-1.compute.amazonaws.com:5432/d7q2201bv6j43r");
+                settings.put(Environment.DRIVER, "jdbc:postgresql://ec2-54-246-90-10.eu-west-1.compute.amazonaws.com:5432/d7q2201bv6j43r?sslmode=require&user=njbvswdsolhkun&password=4f4db84de8e6c4b372a79d86e2da5a1b3f22b5acaefbc76e0505d36493e24851");
+//                settings.put(Environment.DRIVER, "org.postgresql.Driver");
+//                jdbc:postgresql://ec2-54-246-90-10.eu-west-1.compute.amazonaws.com:5432/d7q2201bv6j43r?sslmode=require&user=njbvswdsolhkun&password=4f4db84de8e6c4b372a79d86e2da5a1b3f22b5acaefbc76e0505d36493e24851
+                settings.put(Environment.URL, "postgres://njbvswdsolhkun:4f4db84de8e6c4b372a79d86e2da5a1b3f22b5acaefbc76e0505d36493e24851@ec2-54-246-90-10.eu-west-1.compute.amazonaws.com/d7q2201bv6j43r");
 
                 settings.put(Environment.USER, "njbvswdsolhkun");
                 settings.put(Environment.PASS, "4f4db84de8e6c4b372a79d86e2da5a1b3f22b5acaefbc76e0505d36493e24851");
@@ -41,4 +43,6 @@ public class HibernateConfig {
         }
         return sessionFactory;
     }
+
+
 }

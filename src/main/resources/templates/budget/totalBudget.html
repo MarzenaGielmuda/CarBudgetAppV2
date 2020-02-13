@@ -187,7 +187,7 @@
                             <div class="st_column _id" th:text="${parts.id}"></div>
                             <div class="st_column _value" th:text="${parts.value}"></div>
                             <div class="st_column _description" th:text="${parts.description}"></div>
-                            <div class="st_column _date" th:text="${parts.date}"></div>
+                            <div class="st_column _date" th:text="${#dates.format(parts.date, 'yyyy-MM-dd')}"></div>
                         </div>
                     </div>
                 </div>
@@ -208,7 +208,7 @@
                                 <div class="st_column _id" th:text="${service.id}"></div>
                                 <div class="st_column _value" th:text="${service.value}"></div>
                                 <div class="st_column _description" th:text="${service.description}"></div>
-                                <div class="st_column _date" th:text="${service.date}"></div>
+                                <div class="st_column _date" th:text="${#dates.format(service.date, 'yyyy-MM-dd')}"></div>
                             </div>
 
                         </div>
@@ -229,7 +229,7 @@
                                     <div class="st_column _id" th:text="${other.id}"></div>
                                     <div class="st_column _value" th:text="${other.value}"></div>
                                     <div class="st_column _description" th:text="${other.description}"></div>
-                                    <div class="st_column _date" th:text="${other.date}"></div>
+                                    <div class="st_column _date" th:text="${#dates.format(other.date, 'yyyy-MM-dd')}"></div>
                                 </div>
 
                             </div>
@@ -250,7 +250,7 @@
                                         <div class="st_column _id" th:text="${petrolGas.id}"></div>
                                         <div class="st_column _value" th:text="${petrolGas.value}"></div>
                                         <div class="st_column _description" th:text="${petrolGas.description}"></div>
-                                        <div class="st_column _date" th:text="${petrolGas.date}"></div>
+                                        <div class="st_column _date" th:text="${#dates.format(petrolGas.date, 'yyyy-MM-dd')}"></div>
                                     </div>
 
                                 </div>
